@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Đăng nhập bằng khuôn mặt</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; padding-top: 40px; }
+    video { border: 2px solid #333; border-radius: 8px; }
+    #status { margin-top: 10px; font-size: 18px; }
+  </style>
+</head>
+<body>
+  <h1>🔐 Đăng nhập bằng khuôn mặt</h1>
+
+  <label for="idbv">Nhập ID của bạn:</label>
+  <input type="number" id="idbv" required placeholder="VD: 79025" />
+  <br><br>
+
+  <video id="video" width="480" height="360" autoplay muted playsinline></video>
+  <br><br>
+  
+  <button onclick="startFaceRecognition()">Xác thực</button>
+  <p id="status">🕒 Vui lòng nhập ID và nhấn xác thực</p>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+
+oracledb
+numpy>=1.23
+opencv-python
+face_recognition
