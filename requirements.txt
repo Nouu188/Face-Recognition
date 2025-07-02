@@ -1,4 +1,4 @@
-
+Flask>=2.0
 oracledb
 numpy>=1.23
 opencv-python
